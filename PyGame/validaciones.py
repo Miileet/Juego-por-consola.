@@ -24,7 +24,7 @@ def respuesta_valida_opcion(texto):
         respuesta = input(texto).upper()
     return respuesta
 
-def verificar_estado_juego(posicion, nombre, tablero):
+def verificar_estado_juego(posicion:int, nombre:str, tablero:list):
     estado = "continua"
 
     if posicion == len(tablero)-1:
