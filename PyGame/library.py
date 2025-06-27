@@ -33,43 +33,6 @@ def mostrar_tablero():
         print(tablero[i], end=" ")
     print()
 
-# def movimiento(posicion, resultado):
-#     """
-#     funcion que realiza el movimiento dependiendo si el usuario acierta o no la respuesta
-#     """
-#     if resultado:
-#         posicion += 1
-#         print("Correcto, avanzas")
-
-#         if posicion >= len(tablero):
-#             posicion = len(tablero) - 1
-
-#         casillero_actual = tablero[posicion]
-#         while casillero_actual != 0:
-#             if casillero_actual >= 0:
-#                 posicion += casillero_actual
-#                 print(f"Avanzas {casillero_actual} casilleros extras")
-#             else:
-#                 print(f"Retrocedes {abs(casillero_actual)} casilleros")
-#                 posicion -= casillero_actual
-
-#             if posicion < 0:
-#                 posicion = 0
-#                 break
-#             if posicion >= len(tablero):
-#                 posicion = len(tablero) - 1
-#                 break
-
-#             casillero_actual = tablero[posicion]
-
-#     else:
-#         posicion -= 1
-#         print("Incorrecto, retrocedes")
-#         if posicion < 0:
-#             posicion = 0
-
-#     return posicion
-
 def movimiento(posicion, resultado):
     if resultado:
         posicion += 1
