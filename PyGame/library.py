@@ -33,7 +33,7 @@ def mostrar_tablero():
         print(tablero[i], end=" ")
     print()
 
-def movimiento(posicion, resultado):
+def movimiento(posicion:int, resultado:bool):
     if resultado:
         posicion += 1
         print("Respuesta correcta, avanzas")
